@@ -1,0 +1,48 @@
+@import "_vars";
+@import "vendor/reset";
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: white;
+    font-size: 1.4rem;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe\ UI, Roboto, Helvetica\ Neue, Arial, Noto\ Sans, sans-serif;
+    color: black;
+    line-height: 1.5;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+   
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5) {
+    html,
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+}
+
+
+// Blocks
+
+@import "blocks/header.scss";
+@import "blocks/container.scss";
+@import "blocks/intro.scss";
+@import "blocks/form.scss";
+@import "blocks/section.scss";
+@import "blocks/footer.scss";
+@import "blocks/loader.scss";
+@import "blocks/card.scss";

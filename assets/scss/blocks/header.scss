@@ -1,0 +1,58 @@
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: white;
+}
+
+.header__inner {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .header__link {
+        display: flex;
+        align-items: center;
+        .burger__item {
+            display: block;
+            width: 31px;
+            height: 3px;
+            background-color: #000;
+            margin-right: 5.6rem;
+
+            &:nth-child(even) {
+                margin-top: 0.6rem;
+                margin-bottom: 0.6rem;
+            }
+        }
+        
+    }
+
+    .header__info {
+        display: flex;
+        align-items: center;
+
+        .language {
+            display: flex;
+            align-items: center;
+            margin-left: 3.3rem;
+            font-family: 'Rosario', sans-serif;
+            font-weight: bold;
+            font-size: 2rem;
+        }
+
+        .icons {
+            margin-left: 3rem;
+
+            &:last-child {
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+

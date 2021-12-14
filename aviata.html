@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/the-datepicker.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700;800&family=Rosario:wght@700&family=Secular+One&display=swap" rel="stylesheet">
+    <title>Aviata</title>
+</head>
+<body onload="myFunction()">
+    
+
+    <!-- Page -->
+
+    <div class="page" id="page" style="display:none;">
+
+        <!-- Header -->
+
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <div class="header__link">
+                        <div class="burger">
+                            <span class="burger__item"></span>
+                            <span class="burger__item"></span>
+                            <span class="burger__item"></span>
+                        </div>
+                        <div class="header__logo">
+                            <img class="img" src="assets/img/Logo_of_Kaspi_bank-removebg-preview 2.svg" alt="" width="45">
+                        </div>
+                    </div>
+                    <div class="header__info">
+                        <div class="icons">
+                            <img class="img" src="assets/img/Без_названия__2_-removebg-preview 1.svg" alt="" width="35">
+                        </div>
+                        <div class="icons">
+                            <img class="img" src="assets/img/bell.png" alt="" width="35">
+                        </div>
+                        <div class="icons">
+                            <img class="img" src="assets/img/user.png" alt="" width="35">
+                        </div>
+                        <div class="language">
+                            <div class="text2">KZT <img src="assets/img/Без_названия-removebg-preview 2.svg" alt="" width="15"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+        <!-- Intro -->
+
+
+        <div class="intro">
+            <div class="container">
+                <div class="intro__inner">
+                    <div class="intro__request">
+                        <h1 class="request__title">Найдите лучшие авиабилеты из г. Бостон</h1>
+                        <div class="request__content">
+                            
+                            <div class="request__text">
+                                <div class="request__menu active">
+                                    Туда и обратно  
+                                </div>
+                                <div class="request__menu">
+                                    В один конец  
+                                </div>
+                                <div class="request__menu">
+                                    Сложный маршрут  
+                                </div>
+                            </div>
+                            
+                            
+                            <form class="request__form" action="/">
+                                <div class="input--left">
+                                    <div>
+                                    <input class="input input--user" type="text" name="text" placeholder="Из Бостон(BOS)">
+                                </div>
+                                <div class="dates">
+                                    <div>
+                                    <input class="date" id="date" type="text" name="date" placeholder="Туда">
+                                </div>
+
+                                <div>
+                                    <input class="date" id="date2" type="text" name="date" placeholder="Обратно">
+                                </div>
+                                </div>
+                                </div>
+                                <div class="input--right">
+                                    <div>
+                                    <input class="input input--user" type="text" name="text" placeholder="В Город или аэропорт">
+                                </div>
+                                    <div>
+                                        <input class="text text--prof" type="text" name="date">
+                                    </div>
+                                </div>
+
+                                
+                            </form>
+                            <label class="checkbox" for="check">
+                                <input id="check" class="checkbox2" type="checkbox" name="checkbox">
+                                <p class="checkbox__text">Предпочтительно без пересадок</p>
+                            </label>
+                            <label class="checkbox" for="check2">
+                                <input id="check2" class="checkbox2" type="checkbox" name="checkbox">
+                                <p class="checkbox__text">Включить близлежащие аэропорты</p>
+                            </label>
+
+                            <button class="form__btn" type="button">Найти авиабилеты</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <section class="section">
+            <div class="container">
+                <h1 class="section__title">Популярные авиакомпании, выполняющие рейсы из города Бостон</h1>
+                <a href="#" class="section__link">Показать все</a>
+                <div class="planes">
+                    <div class="section__block">
+                        <div class="section__img">
+                            <img class="img" src="assets/img/jetblue-airways 1.png" alt="">
+                        </div>
+                        <div class="section__content-title">JetBlue Airways</div>
+                        <div class="section__content">
+                            <div class="person">
+                                <img class="img" src="https://via.placeholder.com/50x50" alt="">
+                            </div>
+                            <div class="section__comment">
+                                <div class="section__name">
+                                    “Очень прилично”
+                                </div>
+                                <div class="section__text">
+                                    <div>
+                                    Y5332AA_ 7 января 2020 г.
+                                </div>
+
+                                <div class="comment">
+                                    18 272 отзыва
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section__block">
+                        <div class="section__img">
+                            <img class="img" src="assets/img/american-airlines 1.png" alt="">
+                        </div>
+                        <div class="section__content-title">American Airlines</div>
+                        <div class="section__content">
+                            <div class="person">
+                                <img class="img" src="https://via.placeholder.com/50x50" alt="">
+                            </div>
+                            <div class="section__comment">
+                                <div class="section__name">
+                                    “воздушный трамвай с проблемами”
+                                </div>
+                                <div class="section__text">
+                                    <div>
+                                        Елена И и  2 июля 2018 г.
+                                </div>
+
+                                <div class="comment">
+                                    73 428 отзывов
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section__block">
+                        <div class="section__img">
+                            <img class="img" src="assets/img/hawaiian-airlines 1.png" alt="">
+                        </div>
+                        <div class="section__content-title">Hawaiian Airlines</div>
+                        <div class="section__content">
+                            <div class="person">
+                                <img class="img" src="https://via.placeholder.com/50x50" alt="">
+                            </div>
+                            <div class="section__comment">
+                                <div class="section__name">
+                                    “Хорошая авиакомпания!”
+                                </div>
+                                <div class="section__text">
+                                    <div>
+                                        goldntay  25 августа 2016 г.
+                                </div>
+
+                                <div class="comment">
+                                    7 704 отзыва
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section__block">
+                        <div class="section__img">
+                            <img class="img" src="assets/img/cape-air 1.png" alt="">
+                        </div>
+                        <div class="section__content-title">Cape Air</div>
+                        <div class="section__content">
+                            <div class="person">
+                                <img class="img" src="https://via.placeholder.com/50x50" alt="">
+                            </div>
+                            <div class="section__comment">
+                                <div class="section__name">
+                                    “воздушный трамвай с проблемами”
+                                </div>
+                                <div class="section__text">
+                                    <div>
+                                        Елена И и  2 июля 2018 г.
+                                </div>
+
+                                <div class="comment">
+                                    18 272 отзыва
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- /.planes -->
+            </div><!-- /.container -->
+        </section><!-- /.section -->
+        
+
+
+        <!-- Footer -->
+
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__left">
+                        <div class="footer__img">
+                            <div>
+                            <img class="img" src="assets/img/Logo_of_Kaspi_bank-removebg-preview 2.svg" alt="" width="45">
+                        </div>
+                        
+                        <div>
+                            <img class="img" src="assets/img/Kaspi Travel.svg" alt="">
+                        </div>
+                        </div>
+
+                        <div class="footer__nav">
+                            <div>
+                            <a href="#" class="footer__link">О компании</a>
+                        </div>
+                        
+                        <div>
+                            <a href="#" class="footer__link">Публичная оферта</a>
+                        </div>
+
+                        <div>
+                            <a href="#" class="footer__link">Контакты</a>
+                        </div>
+                        
+                        </div>
+                    </div>
+                    <div class="footer__right">
+                        <div class="footer__form">
+                            <form action="/" class="footer__input">
+                                
+                                    <input class="input" type="email" name="email" placeholder="Email рассылка новостей">
+                               
+                            </form>
+                            <button class="button" type="submit">Подписаться</button>
+                        </div>   
+                        <div class="footer__icons">
+                            
+                        </div>        
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Loader -->
+
+        
+    </div><!-- /.page -->
+
+    <div id="loader"></div>
+
+    <script src="assets/js/the-datepicker.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

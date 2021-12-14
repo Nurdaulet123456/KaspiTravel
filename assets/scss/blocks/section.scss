@@ -1,0 +1,134 @@
+.section {
+    padding: 115px 0;
+
+
+    .section__title {
+        text-align: $text-align;
+        font-family: 'Tahoma', sans-serif;
+        font-size: 4rem;
+        font-weight: bold;
+
+        margin-bottom: 4rem;
+    }
+
+    .section__link {
+        display: inline-block;
+        color: $black;
+        font-size: 1.8rem;
+        font-family: 'Tahoma',sans-serif;
+        letter-spacing: 0.85px;
+        text-align: center;
+
+        margin-left: 50%;
+        transform: translateX(-50%);
+        margin-bottom: 12.5rem;
+
+        text-decoration: none;
+
+
+        &::after {
+            content: "";
+            display: block;
+            width: 0%;
+            height: 2px;
+            background-color: $black;
+            margin-top: .9rem;
+            margin-left: 50%;
+            transform: translateX(-50%);
+            transition: width 0.2s linear;
+        }
+
+
+        &:hover::after {
+            width: 100%;
+        }
+    }
+
+}
+
+.planes {
+    display: flex;
+    flex-wrap: wrap;
+    @media (max-width: 991px) {
+        flex-wrap: wrap;
+    } 
+    .section__block {
+        width: 50%;
+        max-width: 579px;
+        margin: 0 auto;
+        margin-bottom: 8.5rem;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 7px 7px 10px 2px rgba(0, 0, 0, 0.15);
+        padding-bottom: 2.5rem;
+        transition: all 0.2s linear;
+
+        @media (max-width: 991px) {
+            width: 100%;
+            flex-wrap: wrap;
+        } 
+
+        &:hover {
+            box-shadow: 7px 7px 10px 2px rgba(0, 0, 0, 0.45);
+        }
+        .section__img {
+            height: 300px;
+            width: 100%;
+            margin-bottom: 5rem;
+            overflow: hidden;
+
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                transition: all 0.9s linear;
+            }
+
+            &:hover {
+                img {
+                    transform: scale(1.2);
+                }
+            }
+        }
+        .section__content-title {
+            margin-left: 2rem;
+            margin-bottom: 3rem;
+
+            font-family: 'Tahoma', sans-serif;
+            font-size: 2.4rem;
+            font-weight: bold;
+        }
+
+        .section__content {
+            padding-left: 2rem;
+            display: flex;
+            align-items: center;
+            .person {
+                margin-right: 1.5rem;
+                img {
+                    border-radius: 50%;
+                }
+            }
+            .section__comment {
+            .section__name {
+                font-family: 'Tahoma', sans-serif;
+                font-size: 1.6rem;
+                font-weight: bold;
+
+                margin-bottom: 1.5rem;
+            }
+            .section__text {
+                display: flex;
+                font-family: 'Tahoma', sans-serif;
+                font-weight: 400;
+                font-size: 1.2rem;
+
+                .comment {
+                    position: absolute;
+                    right: 2rem;
+                }
+            }
+        }
+        }
+    }
+}
