@@ -1,7 +1,13 @@
 .request__form {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: space-between;
+
+    @media (max-width: 705px) {
+        display: block;
+        widows: 100%;
+    }
     .input--left {
         .input {
             width: 100%;
@@ -15,6 +21,12 @@
             &--user {    
             background: url("../img/location 1.svg") left 8px top 13px no-repeat;
     
+    }
+
+    @media (max-width: 705px) {
+        display: block;
+        widows: 100%;
+        max-width: 100%;
     }
 
             &::placeholder {
@@ -40,6 +52,13 @@
 
         }
 
+
+        @media (max-width: 705px) {
+            display: block;
+            widows: 100%;
+            max-width: 100%;
+        }
+
             &::placeholder {
                 color: #A8A7A7;
                 font-weight: bold;
@@ -56,12 +75,24 @@
     align-items: center;
     justify-content: space-between;
     margin-top: 10px;
+    @media (max-width: 705px) {
+        display: block;
+        width: 100%;
+
+    }
     .date {
      width: 100%;
      max-width: 110px;
      padding: 16px 0 16px 20px;
      border: 1px solid #E5E5E5;
      border-radius: 5px;
+
+     @media (max-width: 705px) {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 10px;
+    }
 
      &::placeholder {
          font-weight: bold;

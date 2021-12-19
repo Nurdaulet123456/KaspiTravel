@@ -1,0 +1,36 @@
+.content {
+	padding-top: 90px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 1236px;
+	background: url("../img/photo_2021-11-30_12-22-58 1.png") center no-repeat;
+	background-size: cover;
+
+
+
+
+	.content__inner {
+		.section__input {
+			width: 100%;
+			max-width: 100%;
+			padding: 25px 0 25px 60px;
+			border: 1px solid white;
+			border-radius: 15px;
+			color: white;
+			font-size: 18px;
+			margin: 0 auto;
+
+			&::placeholder {
+				color: white;
+				font-size: 18px;
+				font-style: italic;
+			}
+
+
+			&--search {
+				background: url("../img/search__input.svg") left 8px top 16px no-repeat;
+			}
+		}
+	}
+}
