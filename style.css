@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+
+*{
+  font-family: 'Nunito', sans-serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  outline: none; border:none;
+  text-decoration: none;
+  transition: all .2s linear;
+}
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 6rem;
+  scroll-behavior: smooth;
+}
+
+section{
+  padding:2rem 9%;
+}
+
+.heading{
+  text-align: center;
+  padding:2.5rem 0
+}
+
+.heading span{
+  font-size: 3.5rem;
+  color:black;
+  padding:.2rem 1rem;
+}
+
+.heading span.space{
+  background:none;
+}
+
+.btn{
+  display: inline-block;
+  margin-top: 1rem;
+  background:red;
+  color:#fff;
+  padding:.8rem 3rem;
+  border:.2rem solid red;
+  cursor: pointer;
+  font-size: 1.7rem;
+}
+
+.btn:hover{
+  background:white;
+  color:red;
+}
+/* Header start*/
+
+/* Header end*/
+
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    position: relative;
+    z-index: 0;
+  }
+  
+  .home .content{
+    text-align: center;
+  }
+  
+.home .content h3{
+    font-size: 4.5rem;
+    color:#fff;
+    text-transform: uppercase;
+    text-shadow: 0 .3rem .5rem rgba(0,0,0,.1);
+}
+.home .content .input-group{
+  width: 90%;
+  max-width: 500px;
+  height: 50px;
+  border-radius: 30px;
+  background: #fff;
+  margin: auto;
+  padding: 2px;
+  display: flex;
+
+}
+.home .content .form-control{
+  border: 0;
+  border-radius: 30px;
+  margin: 2px;
+  box-shadow: none;
+}
+.home .content .input-group-text{
+  width: 90%;
+  height: 100%;
+  margin-left: 24px;
+  margin-top: 0px;
+  background-image: red;
+  border: 0;
+  color: #fff;
+  padding: 0 25px;
+  border-radius: 30px;
+  box-shadow: none;
+}
+.home .content .input-group-text:hover{
+  background: rgb(179, 0, 0);
+  color:white;
+  box-shadow: wheat;
+}
+input{
+    position: relative;
+    display: inline-block;
+    font-size: 3rem;
+    margin: .2rem;
+}
+.home .divisor{
+  margin-top: 2rem;
+  position: relative;
+  display: flex;
+  font-size: 3rem;
+  height: 4.5rem;
+  left: 15.6rem;
+  margin: .4rem;
+}
+.home .divisor .btn{
+  background:red;
+  color:#fff;
+  margin-top: .2rem;
+  width: 35.8rem;
+  height: 4.1rem;
+  padding:.2rem 1rem;
+  border:.4rem solid red;
+  cursor: pointer;
+  font-size: 1.7rem;
+}
+.home .video-container video{
+    position: absolute;
+    top: 0; 
+    left: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    object-fit: cover ;
+}
+.home .controls{
+    padding: 1rem;
+    border-radius: 5rem;
+    /* background: rgba(0,0,0, .7); */
+    position: relative;
+    top: 15rem;
+    /* width: 16rem; */
+    align-items: center;
+    /* height: 3rem; */
+}
+.home .controls .vid-btn{
+    height: 2rem;
+    width: 2rem;
+    display: inline-block;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+    margin: 0.5rem; 
+}
+.home .controls .vid-btn.active{
+    background: red;  
+}
+
+/* Packages section*/
+.packages .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:2rem;
+  }
+  .packages .box-container .box{
+    flex:1 1 30rem;
+    border-radius: .5rem;
+    overflow: hidden;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+  }
+  .packages .box-container .box img{
+    height: 25rem;
+    width:100%;
+    object-fit: cover;
+  }
+  .packages .box-container .box .content{
+    padding:2rem;
+  }
+  .packages .content .btn{
+    margin-left: 18px;
+  }
+  .packages .box-container .box .content h3{
+    font-size:2rem;
+    color:#333;
+  }
+  .packages .box-container .box .content h3 i{
+    color:red;
+  }
+  .packages .box-container .box .content p{
+    font-size:1.7rem;
+    color:#666;
+    padding:1rem 0;
+    height: 18rem;
+  }
+  .packages .box-container .box .content .price{
+    font-size: 2rem;
+    color:#333;
+    padding-top: 1rem;
+    padding-left: 9rem;
+  }
+  .packages .box-container .box .content .price span{
+    color:#666;
+    font-size: 1.5rem;
+    text-decoration: line-through;
+  }
+  /* Packages end */
+
+
+  /* Footer section */
+  .footer{ 
+    background-color: black; 
+    width: 100%; 
+    height: 600px; 
+    padding-top: 158px; 
+     
+} 
+.footer_footer{ 
+    display: flex; 
+    justify-content: space-between; 
+} 
+ 
+.left_up{ 
+    display: flex; 
+     
+} 
+.left_up img{ 
+    width: 87px ; 
+    height:78px ; 
+} 
+ 
+.left_up p{ 
+    width: 166px; 
+    height: 26px; 
+    font-size: 23.5px; 
+    font-family: 'Secular One', sans-serif; 
+    color: white; 
+    margin-left: 22px; 
+    text-align: center; 
+    margin-top: 23px; 
+ 
+} 
+.left_down{ 
+    color: white; 
+    font-size: 23.5px; 
+} 
+ 
+.left_down p{ 
+    margin-top: 46px; 
+} 
+ 
+.right_up .first_inp{ 
+    width: 532px; 
+    height: 65px; 
+    border-radius: 5px; 
+    padding: 22px 305px 18px 28px; 
+    font-size: 16px; 
+    margin-left: 112px; 
+} 
+.right_up  .subscribe{ 
+    background-color: #00A44B; 
+    width: 289px; 
+    height: 65px; 
+    border-radius: 5px; 
+    margin-left: 50px; 
+    color: white; 
+    font-size: 23px; 
+     
+} 
+.right_down{ 
+    margin-top: 53px; 
+    margin-left: 60px; 
+} 
+ 
+#priceline , #booking{ 
+    margin-left: 80px; 
+}
+/*Footer end */
+@media  screen and (max-width: 768px){
+.home .content h3{
+    font-size: 3rem;
+    color:#fff;
+    text-transform: uppercase;
+    text-shadow: 0 .3rem .5rem rgba(0,0,0,.1);
+}
+.home .content .input-group{
+  width: 100%;
+  min-width: 500px;
+  height: 50px;
+  border-radius: 30px;
+  background: #fff;
+  margin: auto;
+  padding: 2px;
+  display: inline;
+
+}
+.home .content .form-control{
+  border: 0;
+  border-radius: 30px;
+  margin: 2px;
+  box-shadow: none;
+}
+.home .content .input-group-text{
+  width: 100px;
+  height: 100%;
+  margin-top: 10px;
+  background-image: red;
+  border: 0;
+  color: #fff;
+  padding: 5px 25px;
+  border-radius: 30px;
+  box-shadow: none;
+}
+.home .content .input-group-text btn{
+  width: 30%;
+  margin-left: 80px;
+}
+.home .content .input-group-text:hover{
+  background: rgb(179, 0, 0);
+  color:white;
+  box-shadow: wheat;
+}
+input{
+    position: relative;
+    display: inline-block;
+    font-size: 3rem;
+    margin: .8rem;
+}
+}
