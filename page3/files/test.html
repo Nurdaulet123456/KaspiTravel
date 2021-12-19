@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="teststyle.css">
+</head>
+<body>
+    <header class="header">
+        <div class="menu_open">
+            <div class="inner">
+                 <div class="air sections">
+                     <div class="photo">
+                         <img src="../pics/plane.png">
+                     </div>
+                     <div class="name">
+                        <a href="#">Авиабилеты</a>
+                     </div>
+                 </div>
+                 <div class="ground sections">
+                     <div class="photo">
+                         <img src="../pics/trainnnn.png">
+                     </div>
+                     <div class="name">
+                         <a href="#">Железные дороги</a>
+                     </div>
+                 </div>
+                 <div class="bus sections">
+                     <div class="photo">
+                         <img src="../pics/autobus.png">
+                     </div>
+                     <div class="name">
+                         <a href="#">Автобус билеты</a>
+                     </div>  
+                 </div>
+                 <div class="automobile sections">
+                     <div class="photo">
+                         <img src="../pics/automobile.png">
+                     </div>
+                     <div class="name">
+                         <a href="#">Автодороги билеты</a>
+                     </div>
+                 </div>
+                 <div class="ad">
+                     Реклама
+                 </div>
+            </div>
+            <div class="close">
+                <img src="../pics/Vector.svg">
+            </div>
+           
+        </div>
+        <div class="container">
+            <div class="inner"> 
+                <div class="inner__left">
+                   <div class="menu">
+                       <a href="#" class="menu_btn">
+                           <span></span>
+                       </a>
+                   </div>
+                   <div class="logo"><img src="../pics/Logo_of_Kaspi_bank-removebg-preview 2.png" width="70px"></div>
+                   <div class="company__name">Kaspi Travel</div>
+                </div>
+                <div class="inner__right">
+                    <p>KZT  <span><a href="#"><img src="../pics/Без_названия-removebg-preview 2.svg"></a></span></p>
+                </div>
+            </div>
+        </div>
+     </header>
+     <div class="block">
+        <div class="container">
+            <div class="inner">
+                <div class="steps"> 
+                    <div class="select__place">
+                        <div class="digits one">1</div>
+                        <h4>Направление</h4>
+                    </div>
+                    <div class="choose__ticket">
+                        <div class="digits two">2</div>
+                        <h4>Выбор поезда</h4>
+                    </div>
+                    <div class="reserve__ticket">
+                        <div class="digits three">3</div>
+                        <h4>Бронирование</h4>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+     <div class="block1">
+        <div class="container">
+            <div class="inner">
+                <form class="inner__form">
+                   <div class="res__details">
+                       <div class="reserve__title">
+                           <p>Забронировать</p>
+                       </div>
+                       <div class="reserve__from">
+                           <select id="inp"> 
+                               <option value="from1">Откуда</option>
+                               <option value="from2">Шымкент</option>
+                               <option value="from3">Тараз</option>
+                               <option value="from4">Нур-Султан</option>
+                               <option value="from5">Актобе</option>
+                               <option value="from6">Актау</option>
+                           </select>
+                       </div>
+                       <div class="reserve__to">
+                           <select id="inp"> 
+                               <option value="to1">Куда</option>
+                               <option value="to2">Шымкент</option>
+                               <option value="to3">Тараз</option>
+                               <option value="to4">Нур-Султан</option>
+                               <option value="to5">Актобе</option>
+                               <option value="to6">Актау</option>
+                           </select>
+                       </div>
+                       <div class="reserve__train">
+                           <select id="inp">
+                               <option value="">Выберите поезд</option> 
+                               <option value="">Тальго</option>
+                               <option value="">Обычный</option>
+                           </select>
+                       </div>
+                       <div class="departure__time">
+                           <select id="inp"> 
+                               <option value="def">Выбрать время</option>
+                               <option value="time1">10:30</option>
+                               <option value="time2">13:40</option>
+                               <option value="time3">15:15</option>
+                               <option value="time4">18:25</option>
+                               <option value="time5">20:55</option>
+                               <option value="time6">23:40</option>
+                           </select>
+                       </div>
+                       
+                       
+                       <div class="reserve__seating">
+                           <button class="choose__seating">Выбрать место</button>
+                       </div>
+                       <div class="arrangement">
+                           <ul class="seating__rule">
+                               <li id="available">
+                                   <div class="seat white desc"></div>
+                                   <p class="li__p">Доступно</p>
+                               </li>
+                               <li id="selected">
+                                   <div class="seat green desc"></div>
+                                   <p class="li__p">Выбрано</p>
+                               </li>
+                               <li id="sold">
+                                   <div class="seat grey desc"></div>
+                                   <p class="li__p">Продано</p>
+                               </li>      
+                           </ul>
+
+                           <div class="arrangement__container">
+                               <div class="row">
+                                   <div class="vagon1 one right__border">
+                                       <div class="seat white"></div>
+                                       <div class="seat white"></div>
+                                       <div class="seat white"></div>
+                                       <div class="seat white"></div>
+                                   </div>
+                                   <div class="vagon2 one right__border">
+                                       <div class="seat white"></div>
+                                       <div class="seat white"></div>
+                                       <div class="seat white"></div>
+                                       <div class="seat white"></div>
+                                   </div>
+                                   <div class="vagon3 one right__border">
+                                       <div class="seat white"></div>
+                                       <div class="seat white"></div>
+                                       <div class="seat white"></div>
+                                       <div class="seat white"></div>
+                                   </div>
+                                   <div class="vagon4 one right__border">
+                                       <div class="seat white"></div>
+                                       <div class="seat white"></div>
+                                       <div class="seat white"></div>
+                                       <div class="seat white"></div>
+                                   </div>
+                                   <div class="vagon5 one right__border">
+                                       <div class="seat white"></div>
+                                       <div class="seat white"></div>
+                                       <div class="seat white"></div>
+                                       <div class="seat white"></div>
+                                   </div>
+                                   <div class="vagon6 one right__border">
+                                       <div class="seat white"></div>
+                                       <div class="seat white"></div>
+                                       <div class="seat white"></div>
+                                       <div class="seat white"></div>
+                                   </div>
+                                   <div class="vagon7 one right__border">
+                                       <div class="seat white"></div>
+                                       <div class="seat white"></div>
+                                       <div class="seat white"></div>
+                                       <div class="seat white"></div>
+                                   </div>
+                                   <div class="vagon8 one right__border">
+                                       <div class="seat white"></div>
+                                       <div class="seat white"></div>
+                                       <div class="seat white"></div>
+                                       <div class="seat white"></div>
+                                   </div>
+                                   <div class="vagon9 one right__border">
+                                       <div class="seat white"></div>
+                                       <div class="seat white"></div>
+                                       <div class="seat white"></div>
+                                       <div class="seat white"></div>
+                                   </div>
+                                   <div class="vagon10 one right__border">
+                                       <div class="seat white"></div>
+                                       <div class="seat white"></div>
+                                       <div class="seat white"></div>
+                                       <div class="seat white"></div>
+                                   </div>
+                                   <div class="vagon11 one ">
+                                       <div class="seat white"></div>
+                                       <div class="seat white"></div>
+                                       <div class="seat white"></div>
+                                       <div class="seat white"></div>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="row4">
+                               <p class="seating__infp">Выбрано <span id="count">0</span> места на сумму <span id="total">0</span> тг</p>
+                           </div>
+                       </div>
+                     
+                   </div>
+                   <div class="reserve__personal">
+                       <div class="reserve__title">
+                           <p>Персональные данные</p>
+                       </div>
+                       <div class="reserve__fsname">
+                           <input type="text" placeholder="Полное имя*" id="inp" required >
+                       </div>
+                       <div class="reserve__email">
+                           <input type="email" placeholder="Электронная почта*" id="inp"  required>
+                       </div>
+                       <div class="reserve__phone">
+                           <input type="tel" placeholder="Номер телефона*" id="inp" required>
+                       </div>
+                   </div> 
+                   <div class="submitting">    
+                       <div class="buttons buy">
+                           <button type="button" class="btn btn-danger">Купить</button>
+                       </div>
+                       <div class="buttons clear">
+                           <button type="button" class="btn btn-danger">Очистить</button>
+                       </div>
+                   </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+       <div class="container">
+           <div class="footer__inner">
+               <div class="footer__left">
+                   <div class="footer__img">
+                       <div>
+                          <img class="img" src="../pics/Logo_of_Kaspi_bank-removebg-preview 3.svg" alt="" width="45">
+                       </div>
+                   
+                       <div>
+                          <img class="img" src="../pics/Kaspi Travel.svg" alt="">
+                       </div>
+                   </div>
+
+                   <div class="footer__nav">
+                       <div>
+                         <a href="#" class="footer__link">О компании</a>
+                       </div>
+                   
+                       <div>
+                         <a href="#" class="footer__link">Публичная оферта</a>
+                       </div>
+
+                       <div>
+                         <a href="#" class="footer__link">Контакты</a>
+                       </div>
+                   
+                   </div>
+               </div>
+               <div class="footer__right">
+                   <div class="footer__form">
+                       <form action="/" class="footer__input">
+                           
+                               <input class="input" type="email" name="email" placeholder="Email рассылка новостей">
+                          
+                       </form>
+                       <button class="button" type="submit">Подписаться</button>
+                   </div>   
+                   <div class="footer__icons">
+                       
+                   </div>        
+               </div>
+
+           </div>
+           <div class="foot">
+               © 2012-2021 гг. АО «Kaspi Bank», Лицензия №1.2.245/61 от 30.06.09 НБРК.
+           </div>
+       </div>
+   </footer>
+  
+</body>
+     <script src="script.js"></script>   
+</html>
