@@ -1,0 +1,505 @@
+@import url("reset.css");
+@import url("https://fonts.googleapis.com/css2?family=Rosario:wght@700&family=Secular+One&display=swap");
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+.header {
+  width: 100%;
+  height: 80px;
+  background-color: transparent;
+  -webkit-box-shadow: 10px 10px 10px black;
+          box-shadow: 10px 10px 10px black;
+}
+
+.header .container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.header .inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .inner__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .company__name {
+  font-family: 'Secular One', sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 6px;
+}
+
+.header .inner__right p {
+  font-family: 'Arial', sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding-right: 12px;
+}
+
+.header .menu .menu_btn {
+  position: relative;
+  margin-right: 31px;
+  display: block;
+  width: 50px;
+  height: 50px;
+}
+
+.header .menu .menu_btn span,
+.header .menu .menu_btn span:before,
+.header .menu .menu_btn span:after {
+  width: 31px;
+  height: 3px;
+  background-color: black;
+  position: absolute;
+  top: 50%;
+  left: 20%;
+}
+
+.header .menu .menu_btn span:before,
+.header .menu .menu_btn span:after {
+  content: '';
+  left: 1%;
+}
+
+.header .menu .menu_btn span:before {
+  -webkit-transform: translateY(-9px);
+          transform: translateY(-9px);
+}
+
+.header .menu .menu_btn span:after {
+  -webkit-transform: translateY(6px);
+          transform: translateY(6px);
+}
+
+.block1 {
+  background: -webkit-gradient(linear, left top, left bottom, from(#cacaca), to(#e4e4e4));
+  background: linear-gradient(to bottom, #cacaca 0%, #e4e4e4 100%);
+  height: auto;
+  padding-bottom: 40px;
+}
+
+.block1 .container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.block1 .inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.block1 .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.block1 .top .top__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 800px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.block1 .top .top__title h3 {
+  font-family: 'Arial', sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.block1 .top .top__title a {
+  font-family: 'Arial', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.block1 .top .datetime {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.block1 .top .datetime .date {
+  text-align: center;
+  font-weight: 200;
+}
+
+.block1 .top .datetime a {
+  color: black;
+}
+
+.block1 .top .datetime .price {
+  width: 198px;
+  height: 44px;
+  background-color: white;
+  padding: 10px 0px 9px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #707276;
+  background: #FFFFFF;
+  border-radius: 3px;
+  margin-top: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.block1 .top .datetime .price:hover {
+  background: #EAF0FA;
+}
+
+.block1 .bottom .train__description {
+  background: #fff;
+  display: inline-block;
+  height: auto;
+  width: 97.8%;
+  border-radius: 3px 3px 0 0;
+  margin-bottom: 1px;
+  padding: 16px 15px 20px;
+  border-right: 0;
+  margin-top: 10px;
+}
+
+.block1 .bottom .train__description .t__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.block1 .bottom .train__description .t__inner .t__time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+
+.block1 .bottom .train__description .t__inner .t__time .depart__time, .block1 .bottom .train__description .t__inner .t__time .arrive__time {
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.block1 .bottom .train__description .t__inner .t__time .depart__time:after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 1px;
+  background-color: grey;
+  position: absolute;
+  top: 40%;
+  right: -180%;
+}
+
+.block1 .bottom .train__description .t__inner .t__time .arrive__time:before {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 1px;
+  background-color: grey;
+  position: absolute;
+  top: 40%;
+  left: -180%;
+}
+
+.block1 .bottom .train__description .t__inner .t__time .overall__time {
+  margin: 0 160px;
+  padding-bottom: 35px;
+}
+
+.block1 .bottom .train__description .t__inner .t__time .depart__city, .block1 .bottom .train__description .t__inner .t__time .arrive__city {
+  text-transform: capitalize;
+  padding-top: 7px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.block1 .bottom .train__description .t__inner .t__time .todaysdate {
+  color: #0089D0;
+  font-size: 17px;
+  font-weight: 700;
+  margin-left: 20px;
+  text-transform: lowercase;
+}
+
+.block1 .bottom .train__description .t__inner .t__name .name {
+  font-size: 25px;
+  font-weight: bold;
+  padding: 10px 0;
+}
+
+.block1 .bottom .train__description .t__inner .t__name .train__info {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 4px 12px;
+  vertical-align: middle;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 700;
+  font-size: 20px;
+  color: #0089D0;
+  text-decoration: none;
+  background-color: #EEF9E6;
+  border-radius: 18px;
+  border: none;
+  cursor: pointer;
+}
+
+.block1 .bottom .tr__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.block1 .bottom .tr__inner .var__div {
+  background-color: white;
+  width: 16.66%;
+  height: 90px;
+  position: relative;
+  line-height: 16px;
+  text-align: center;
+  font-size: 12px;
+  display: inline-block;
+  padding: 20px 5px 12px 0;
+  border-right: 1px dotted #b3b5b8;
+}
+
+.block1 .bottom .tr__inner .var__div .quantity {
+  display: inline-block;
+  background-color: #d1d0cf;
+  float: right;
+  margin-top: -20px;
+  margin-right: 10px;
+  width: 30px;
+  height: 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-family: 'Arial', sans-serif;
+  font-weight: 500;
+  padding: 5px;
+}
+
+.block1 .bottom .tr__inner .var__div .unavailable {
+  padding-top: 20px;
+}
+
+.block1 .bottom .tr__inner .var__div .type {
+  font-size: 17px;
+}
+
+.block1 .bottom .tr__inner .var__div .type__price {
+  background: #0089D0;
+  font-weight: 700;
+  line-height: 20px;
+  font-size: 16px;
+  color: #fff;
+  padding: 10px 40px;
+  height: 30px;
+  border-radius: 3px;
+  position: absolute;
+  white-space: nowrap;
+  left: 50%;
+  -webkit-transform: translatex(-50%);
+          transform: translatex(-50%);
+  bottom: 10px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* ------------ FOOTER -----------------*/
+.footer {
+  background-color: black;
+  color: white;
+  height: 310px;
+  padding: 7rem 10rem;
+}
+
+.footer .foot {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.footer .container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.footer .footer__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer .footer__inner .footer__left {
+  margin-right: 5.2rem;
+}
+
+.footer .footer__inner .footer__left .footer__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 4rem;
+}
+
+.footer .footer__inner .footer__left .footer__img img:nth-child(1) {
+  margin-right: 2.2rem;
+}
+
+.footer .footer__inner .footer__left .footer__nav .footer__link {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 4.1rem;
+  font-size: 1.5rem;
+}
+
+.footer .footer__inner .footer__left .footer__nav .footer__link:nth-child(3) {
+  margin-bottom: 0;
+}
+
+.footer__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__form .input {
+  border: none;
+  display: inline-block;
+  padding: 18px 305px 18px 28px;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.footer__form .button {
+  margin-left: 50px;
+  padding: 0 66px;
+  border: none;
+  background-color: red;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.footer__form .button::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 56px;
+  background-color: red;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  z-index: -1;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+.footer__form .button:hover::after {
+  left: 0;
+}
+/*# sourceMappingURL=tickets.css.map */
