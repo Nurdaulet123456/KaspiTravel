@@ -22,3 +22,10 @@ function showPage() {
 
 
 // Burger
+
+let burger = document.querySelector('.burger');
+let width = document.querySelector('.width');
+
+width.addEventListener('click', function() {
+  burger.classList.toggle('show');
+});

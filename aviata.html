@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/the-datepicker.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700;800&family=Rosario:wght@700&family=Secular+One&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@700;800&family=Rosario:wght@700&family=Secular+One&display=swap"
+        rel="stylesheet">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  
     <title>Aviata</title>
 </head>
+
 <body onload="myFunction()">
-    
+
 
     <!-- Page -->
 
@@ -19,30 +26,41 @@
         <!-- Header -->
 
         <header class="header">
+            <div class="main-menu">
+                <ul>
+                    <section class="home">
+                        <li class="menu-item"><img src="assets/img/plane.svg" alt=""><span class="menu__text">Авиабилеты</span></li>
+                        <li class="menu-item"><img src="assets/img/train.svg" alt=""><span class="menu__text">Поезд</span></li>
+                        <li class="menu-item"><img src="assets/img/autobus.svg" alt=""><span class="menu__text">Автобус</span></li>
+                        <li class="menu-item"><img src="assets/img/car.svg" alt=""><span class="menu__text">Машины</span></li>
+                    </section>
+                </ul>
+            </div>
             <div class="container">
                 <div class="header__inner">
                     <div class="header__link">
-                        <div class="burger">
-                            <span class="burger__item" data-burger="burger"></span>
-                            <span class="burger__item" data-burger="burger"></span>
-                            <span class="burger__item" data-burger="burger"></span>
-                        </div>
                         <div class="header__logo">
-                            <img class="img" src="assets/img/Logo_of_Kaspi_bank-removebg-preview 2.svg" alt="" width="45">
+                            <img class="img" src="assets/img/Logo_of_Kaspi_bank-removebg-preview 2.svg" alt=""
+                                width="45">
                         </div>
                     </div>
                     <div class="header__info">
-                        <div class="icons">
+                        <!-- <div class="icons">
                             <img class="img" src="assets/img/Без_названия__2_-removebg-preview 1.svg" alt="" width="35">
-                        </div>
-                        <div class="icons">
+                        </div> -->
+                        <div class="icons search-box">
+                            <button class="btn-search"><i class="fas fa-search"></i></button>
+                            <input type="text" class="input-search" placeholder="Type to Search...">
+                          </div>
+                        <div class="icons icons1">
                             <img class="img" src="assets/img/bell.png" alt="" width="35">
                         </div>
                         <div class="icons">
                             <img class="img" src="assets/img/user.png" alt="" width="35">
                         </div>
                         <div class="language">
-                            <div class="text2">KZT <img src="assets/img/Без_названия-removebg-preview 2.svg" alt="" width="15"></div>
+                            <div class="text2">KZT <img src="assets/img/Без_названия-removebg-preview 2.svg" alt=""
+                                    width="15"></div>
                         </div>
                     </div>
                 </div>
@@ -59,39 +77,42 @@
                     <div class="intro__request">
                         <h1 class="request__title">Найдите лучшие авиабилеты из г. Бостон</h1>
                         <div class="request__content">
-                            
+
                             <div class="request__text">
                                 <div class="request__menu active" style="margin: 0 auto; margin-bottom: 3rem;">
-                                    Туда и обратно  
+                                    Туда и обратно
                                 </div>
                             </div>
-                            
-                            
+
+
                             <form class="request__form" action="/">
                                 <div class="input--left">
                                     <div>
-                                    <input class="input input--user" type="text" name="text" placeholder="Из Бостон(BOS)">
-                                </div>
-                                <div class="dates">
-                                    <div>
-                                    <input class="date" id="date" type="text" name="date" placeholder="Туда">
-                                </div>
+                                        <input class="input input--user" type="text" name="text"
+                                            placeholder="Из Бостон(BOS)">
+                                    </div>
+                                    <div class="dates">
+                                        <div>
+                                            <input class="date" id="date" type="text" name="date" placeholder="Туда">
+                                        </div>
 
-                                <div>
-                                    <input class="date" id="date2" type="text" name="date" placeholder="Обратно">
-                                </div>
-                                </div>
+                                        <div>
+                                            <input class="date" id="date2" type="text" name="date"
+                                                placeholder="Обратно">
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="input--right">
                                     <div>
-                                    <input class="input input--user" type="text" name="text" placeholder="В Город или аэропорт">
-                                </div>
+                                        <input class="input input--user" type="text" name="text"
+                                            placeholder="В Город или аэропорт">
+                                    </div>
                                     <div>
                                         <input class="text text--prof" type="text" name="date">
                                     </div>
                                 </div>
 
-                                
+
                             </form>
                             <label class="checkbox" for="check">
                                 <input id="check" class="checkbox2" type="checkbox" name="checkbox">
@@ -131,17 +152,17 @@
                                 </div>
                                 <div class="section__text">
                                     <div>
-                                    Y5332AA_ 7 января 2020 г.
-                                </div>
+                                        Y5332AA_ 7 января 2020 г.
+                                    </div>
 
-                                <div class="comment">
-                                    18 272 отзыва
-                                </div>
+                                    <div class="comment">
+                                        18 272 отзыва
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="section__block">
+                    <div class="section__block" data-aos="fade-down">
                         <div class="section__img">
                             <img class="img" src="assets/img/american-airlines 1.png" alt="">
                         </div>
@@ -156,12 +177,12 @@
                                 </div>
                                 <div class="section__text">
                                     <div>
-                                        Елена И и  2 июля 2018 г.
-                                </div>
+                                        Елена И и 2 июля 2018 г.
+                                    </div>
 
-                                <div class="comment">
-                                    73 428 отзывов
-                                </div>
+                                    <div class="comment">
+                                        73 428 отзывов
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -181,12 +202,12 @@
                                 </div>
                                 <div class="section__text">
                                     <div>
-                                        goldntay  25 августа 2016 г.
-                                </div>
+                                        goldntay 25 августа 2016 г.
+                                    </div>
 
-                                <div class="comment">
-                                    7 704 отзыва
-                                </div>
+                                    <div class="comment">
+                                        7 704 отзыва
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -206,12 +227,12 @@
                                 </div>
                                 <div class="section__text">
                                     <div>
-                                        Елена И и  2 июля 2018 г.
-                                </div>
+                                        Елена И и 2 июля 2018 г.
+                                    </div>
 
-                                <div class="comment">
-                                    18 272 отзыва
-                                </div>
+                                    <div class="comment">
+                                        18 272 отзыва
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -219,7 +240,7 @@
                 </div><!-- /.planes -->
             </div><!-- /.container -->
         </section><!-- /.section -->
-        
+
 
 
         <!-- Footer -->
@@ -231,41 +252,42 @@
                     <div class="footer__left">
                         <div class="footer__img">
                             <div>
-                            <img class="img" src="assets/img/Logo_of_Kaspi_bank-removebg-preview 2.svg" alt="" width="45">
-                        </div>
-                        
-                        <div>
-                            <img class="img" src="assets/img/Kaspi Travel.svg" alt="">
-                        </div>
+                                <img class="img" src="assets/img/Logo_of_Kaspi_bank-removebg-preview 2.svg" alt=""
+                                    width="45">
+                            </div>
+
+                            <div>
+                                <img class="img" src="assets/img/Kaspi Travel.svg" alt="">
+                            </div>
                         </div>
 
                         <div class="footer__nav">
                             <div>
-                            <a href="#" class="footer__link">О компании</a>
-                        </div>
-                        
-                        <div>
-                            <a href="#" class="footer__link">Публичная оферта</a>
-                        </div>
+                                <a href="#" class="footer__link">О компании</a>
+                            </div>
 
-                        <div>
-                            <a href="#" class="footer__link">Контакты</a>
-                        </div>
-                        
+                            <div>
+                                <a href="#" class="footer__link">Публичная оферта</a>
+                            </div>
+
+                            <div>
+                                <a href="#" class="footer__link">Контакты</a>
+                            </div>
+
                         </div>
                     </div>
                     <div class="footer__right">
                         <div class="footer__form">
                             <form action="/" class="footer__input">
-                                
-                                    <input class="input" type="email" name="email" placeholder="Email рассылка новостей">
-                               
+
+                                <input class="input" type="email" name="email" placeholder="Email рассылка новостей">
+
                             </form>
                             <button class="button" type="submit">Подписаться</button>
-                        </div>   
+                        </div>
                         <div class="footer__icons">
-                            
-                        </div>        
+
+                        </div>
                     </div>
                 </div>
             </div>
@@ -273,12 +295,48 @@
 
         <!-- Loader -->
 
-        
+
     </div><!-- /.page -->
 
     <div id="loader"></div>
 
     <script src="assets/js/the-datepicker.js"></script>
-    <script src="assets/js/app.js"></script>
+    <script>
+        const input = document.getElementById('date');
+const input2 = document.getElementById('date2');
+const datepicker = new TheDatepicker.Datepicker(input);
+const datepicker2 = new TheDatepicker.Datepicker(input2);
+datepicker.render();
+datepicker2.render();
+
+
+
+// Loader
+
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.querySelector(".page").style.display = "block";
+}
+
+
+// Burger
+
+let burger = document.querySelector('.burger');
+let width = document.querySelector('.width');
+
+width.addEventListener('click', function() {
+  burger.classList.toggle('show');
+});
+    </script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/scroll.js"></script>
 </body>
+
 </html>

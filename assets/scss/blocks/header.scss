@@ -1,4 +1,4 @@
-.header {
+.header{
     width: 100%;
     position: fixed;
     top: 0;
@@ -9,28 +9,12 @@
 }
 
 .header__inner {
-    height: 80px;
+    height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    .header__link {
-        display: flex;
-        align-items: center;
-        .burger__item {
-            display: block;
-            width: 31px;
-            height: 3px;
-            background-color: #000;
-            margin-right: 5.6rem;
-
-            &:nth-child(even) {
-                margin-top: 0.6rem;
-                margin-bottom: 0.6rem;
-            }
-        }
-        
-    }
+   
 
     .header__info {
         display: flex;
@@ -52,7 +36,270 @@
                 margin-left: 0;
             }
         }
+
     }
 }
 
+// .burger {
+//     position: absolute;
+//     top: 100%;
+//     z-index: 10000000000000000000;
+//     width: 100%;
+    
+//     max-width: 100px;
+//     background-color: white;
+//     .nav {
+//         position: relative;
+//         padding: 100px 0 0 0;
+//         height: 100vh;
+//     .nav__blocks {
+//         display: flex;
+//         flex-direction: column;
 
+//         i {
+//             .nav__link {
+//                 display: flex;
+//                 width: 100%;
+//                 padding: 40px 0;
+
+//                 &:hover {
+//                 background-color: #ccc;
+
+//                 }
+
+//                 .nav__link-img {
+//                     margin: 0 auto;
+//             }
+
+//                 .nav__link-text {
+//                     display: none;
+//                 }
+
+//                 &:focus {
+//                     outline: none;
+//                 }
+//             }
+//         }
+//     }
+
+//     .width {
+//         display: block;
+//         width: 30px;
+//         height: 30px;
+//         border-radius: 50%;
+//         background-color: white;
+//         position: absolute;
+//         top: 40%;
+//         left: 85%;
+//         box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+
+//         img {
+//             margin-top: 50%;
+            
+//             margin-left: 50%;
+//             transform: translateX(-50%) translateY(-50%);
+
+//             &:focus {
+//                 outline: none;
+//             }
+//         }
+
+     
+//     }
+// }
+
+// &.show {
+//     max-width: 500px;
+//     transition: all 0.5s linear;
+//     .width {
+//         display: block;
+//         width: 30px;
+//         height: 30px;
+//         border-radius: 50%;
+//         background-color: white;
+//         position: absolute;
+//         top: 40%;
+//         left: 96%;
+//         box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+
+//         img {
+//             margin-top: 50%;
+            
+//             margin-left: 50%;
+//             transform: translateX(-50%) translateY(-50%) rotate(180deg);
+//             transition: all 0.5s linear;
+            
+
+//             &:focus {
+//                 outline: none;
+//             }
+//         }
+
+     
+//     }
+
+//     .nav__blocks {
+//         display: flex;
+//         flex-direction: column;
+
+//         i {
+//             .nav__link {
+//                 display: flex;
+//                 width: 100%;
+//                 padding: 40px 0;
+
+//                 &:hover {
+//                 background-color: #ccc;
+
+//                 }
+
+            
+
+//                 .nav__link-text {
+//                     display: none;
+//                 }
+
+//                 &:focus {
+//                     outline: none;
+//                 }
+//             }
+//         }
+//     }
+// }
+// }
+
+
+.main-menu{
+    background-color: #fff;
+
+    width: 70px;
+    height: 100vh;
+
+    position: fixed;
+    top:0;
+    left:0;
+    
+    overflow-x: hidden;
+    overflow-y: hidden;
+    white-space: nowrap;
+    
+    transition: .3s ease;
+    
+    padding-top: 13%;
+}
+
+.main-menu:hover{
+    width : 250px;
+    overflow-y: scroll;
+}
+
+.main-menu .menu-item{
+    display: flex;
+    padding: 10px;
+    margin-bottom: 70px;
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    .menu__text {
+        display: block;
+    &::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 1px;
+        background-color: black;
+        transition: all 0.2s linear;
+      
+
+    }
+
+    &:hover {
+        &::after {
+        height: 6px;
+        }
+    }
+}
+    img {
+        margin-right: 30px;
+    }
+}
+.main-menu .menu-item:hover{
+    background-color: #d6d6d6;
+    cursor: pointer;
+}
+
+
+
+
+
+
+::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent !important;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #bbbbbb;
+    border-radius: 10px;
+  }
+
+
+  .search-box{
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+  }
+  .input-search{
+    height: 50px;
+    width: 50px;
+    border-style: none;
+    padding: 0;
+    padding-left: 55px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    outline: none;
+    border-radius: 25px;
+    transition: all .5s ease-in-out;
+    padding-right: 40px;
+    color: black;
+  }
+  .input-search::placeholder{
+    color:rgba(0, 0, 0, 0.5);
+    font-size: 23px;
+    letter-spacing: 2px;
+    font-weight: 100;
+  }
+  .btn-search{
+    width: 50px;
+    height: 50px;
+    border-style: none;
+    font-size: 30px;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    margin: 0;
+    left: 0;
+    color:black ;
+    background-color:transparent;
+    pointer-events: painted;  
+  }
+  .btn-search:focus ~ .input-search{
+    width: 600px;
+    border-radius: 0px;
+    background-color: transparent;
+    border-bottom:1px solid rgba(95, 95, 95, 0.5);
+    transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+  }
+  .input-search:focus{
+    width: 300px;
+    border-radius: 0px;
+    background-color: transparent;
+    border-bottom:1px solid rgba(255,255,255,.5);
+    transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+  }
+  
